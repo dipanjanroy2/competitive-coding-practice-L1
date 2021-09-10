@@ -71,9 +71,39 @@ int main(){
 }
 
 ```
+2. 2D ARRAY DEMO
 
+```
+#include <bits/stdc++.h>
+using namespace std;
 
-2.Matrix Multiplication 2D ARRAY
+   int main(){
+     int n,m;
+       
+     cin>>n>>m;
+     int  arr[n][m];
+
+     for (int i = 0; i < n; i++){
+      for (int j = 0; j < m; j++)
+      {
+        cin>>arr[i][j];
+      }
+      }
+      
+
+      for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            cout<<arr[i][j]<<" ";
+           }
+            cout<<"\n";
+       }
+      return 0;
+    }
+       
+
+```
+
+3.Matrix Multiplication 2D ARRAY
 ```
 
 import java.io.*;
