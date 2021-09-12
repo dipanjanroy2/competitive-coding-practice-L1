@@ -171,21 +171,51 @@ public static void main(String[] args) throws Exception {
   
 ```
 
+4. Print All Palindromic Substrings
+
+```
+#include<bits/stdc++.h>
+using namespace std;
+
+    bool isPalindrome(string str){
+		int i = 0, j = str.length() - 1;
+		while(i < j){
+			if(str[i] != str[j]){
+				return false;
+			}
+			i++;
+			j--;
+		}
+		return true;
+	}
+
+void subString(string s, int n)
+{
+    for (int i = 0; i < n; i++){
+        for (int j = 1; j <= n - i; j++){
+            //cout << s.substr(i, j) << endl;
+
+            string ss = s.substr(i,j);
+            
+            if(isPalindrome(ss)== true){ cout<<s.substr(i,j)<<"\n";} }
+
+    }
+
+}
+ 
+
+
+// Driver program to test above function
+int main()
+{
+    string s;
+    cin>>s;
+    subString(s,s.length());
+    return 0;
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
